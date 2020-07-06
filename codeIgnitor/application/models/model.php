@@ -2,11 +2,14 @@
 
  class Model extends CI_Model{
 
-    public function getrans(){
+    public function getrans($user,$pass){
         $this->load->database();
-
-      $q = $this->db->query("Select * from login_detail");
-      return $q->result_array();
+        $array = array('username' => $user, 'password' => $pass);
+        $this->db->select('*');
+        $this->db->from('attendence');
+        $this->db->where($array);
+        $query = $this->db->get();
+        return $query;
     }
  }
 

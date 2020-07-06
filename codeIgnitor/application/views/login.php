@@ -9,14 +9,9 @@
     <link rel="stylesheet" href="http://<?=base_url()?>ext_files/css/login.css">
 </head>
 <body>
-<?php 
-   if($this->uri->segment(2) == "form_val"){
-      echo "enter valid user name";
-   }
-?>
     <header>
         <div class="logo-container">
-            <img src="ext_files/img/bmslogo.png" alt="">
+            <img src="./img/bmslogo.png" alt="">
             <h4 class="logo">Department Of ISE</h4>
         </div>
         <div class="back_icon">
@@ -39,24 +34,17 @@
     <div class="eform">
     <form action="form_val" method = "post">
            <p>User</p>
-           <input type="text" name = "username" class="inp" placeholder="email" />
+           <input type="text" name = "username" class="inp" placeholder="email" /><?php if($this->uri->segment(3) == "form_val")echo form_error("username"); ?>
            <p>Password</p>
-           <input type="text" class="inp1" placeholder="password" />
+           <input type="text" name = "password" class="inp1" placeholder="password" /><?php if($this->uri->segment(3) == "form_val")echo form_error("password"); ?>
            <div class="sub">
            <input class="btn" type="submit" value="Log In">
             </div>
-     </form>
-      </div>
-      <div class="line"></div>
-      <div class="google_img">
-      <img class="img1" src="ext_files/img/Google.png" alt="" srcset="">
-      </div>
-      <div class="google_t">
-      <h2 class="google_txt">Sign In with Google</h2>
-      </div>
-    </section>  
+     </form> 
+      </div> 
+    </section>
     </main>
-    
+    <script src="./js/login.js"></script>
     <script src="https://kit.fontawesome.com/fbe06f22f8.js" crossorigin="anonymous"></script>
 </body>
 </html>
