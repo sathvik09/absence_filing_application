@@ -2,10 +2,7 @@
    class Test extends CI_Controller {
 	
       public function index() {  
-         if($this->uri->segment(3) == "btn"){
-            $this->load->view('login');   
-         }
-        else if($this->uri->segment(3) == "form_val"){
+        if($this->uri->segment(3) == "form_val"){
             if(isset($_POST["username"])){
                $user =  $_POST["username"];
                $pass = $_POST["password"];
@@ -23,10 +20,10 @@
                if($data->num_rows() >0)
                   $this->load->view('dashboard');
                else
-                 $this->load->view('login');    
+                 $this->load->view('landing_page');    
           }
           else{
-             $this->load->view('login'); 
+             $this->load->view('landing_page'); 
           }
          }
          }
