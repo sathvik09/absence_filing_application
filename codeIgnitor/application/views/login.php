@@ -36,7 +36,7 @@
            <p>User</p>
            <input type="text" name = "username" class="inp" placeholder="email" /><?php if($this->uri->segment(3) == "form_val")echo form_error("username"); ?>
            <p>Password</p>
-           <input type="text" name = "password" class="inp1" placeholder="password" /><?php if($this->uri->segment(3) == "form_val")echo form_error("password"); ?>
+           <input type="password" name = "password" class="inp1" placeholder="password" /><?php if($this->uri->segment(3) == "form_val")echo form_error("password"); ?>
            <div class="sub">
            <input class="btn" type="submit" value="Log In">
             </div>

@@ -23,7 +23,7 @@
                if($data->num_rows() >0)
                   $this->load->view('dashboard');
                else
-                 $this->load->view('login');    
+                  $this->load->view('login');    
           }
           else{
              $this->load->view('login'); 

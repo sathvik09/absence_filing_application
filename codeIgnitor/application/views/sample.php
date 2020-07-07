@@ -6,7 +6,17 @@
    <link rel="stylesheet" href="../ext_files/styles.css">
    <title>Document</title>
 </head>
+<style>
+  .pos{
+   margin-left:20vw;
+   width:60%;
+   font-size:3vw;
+  }
+</style>
 <body>
- <h1>dsv</h1>
+<?php  ?>
+<h1 class="pos">Dashboard</h1>
+ <h1 class="pos">This is a leave form </h1>
+ <input type="button" class="pos" value="oh hey">
 </body>
 </html>
