@@ -59,17 +59,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <input
-        class="form-control form-control-dark w-100"
-        type="text"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
+      
     </nav>
 
     <div class="container-fluid">
@@ -81,12 +71,7 @@
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="file"></span>
-                  Number of leaves : ($no)
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link active" href="#">
                   <span data-feather="home"></span>
@@ -96,36 +81,61 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file"></span>
-                  Staff
+                  Employee
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="shopping-cart"></span>
-                  Applications
+                  Leave Forms
+
+
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item settings">
                 <a class="nav-link" href="#">
                   <span data-feather="users"></span>
-                  Status
-                </a>
+                  
+             Settings
+                        </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              
+              <li class="nav-item settings-nav-d">
+                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/sample") ?>">
                   <span data-feather="bar-chart-2"></span>
                   Change Password
                 </a>
               </li>
+              
+              <li class="nav-item settings-nav-d">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Add employee
+                </a>
+              </li>
+              
+              <li class="nav-item settings-nav-d">
+                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/upload")?>">
+                  <span data-feather="bar-chart-2"></span>
+                  Upload Excel Sheet
+                </a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://<?= base_url() ?>">
+                <a class="nav-link" >
                   <span data-feather="layers"></span>
                   Logout
                 </a>
               </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Reports
+                </a>
+              </li>
             </ul>
 
-            </ul>
+            
           </div>
         </nav>
 
@@ -133,23 +143,9 @@
           <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
-            <h1 class="h2">Dashboard</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Upload
-                </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                 Download
-                </button>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-outline-secondary dropdown-toggle"
-              >
-                <span data-feather="calendar"></span>
-                Sort by rows
-              </button>
+                
             </div>
           </div>
 
@@ -173,5 +169,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="http://<?=base_url("ext_files/js/dashboard.js")?>"></script>
+    <script src="http://<?=base_url("ext_files/js/drop_down_menu.js")?>"></script>
   </body>
 </html>
