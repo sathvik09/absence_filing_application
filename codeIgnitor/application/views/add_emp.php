@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,48 +14,50 @@
     <div class="pass-bar">
       <h2 class="title">Add Employees</h2>
     </div>
+    <form action="http://<?=base_url("index.php/test/emp_add")?>" method="post">
     <div class="form">
      <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Employee Id</span>
       </div>
-      <input type="text" class="form-control" placeholder="Employee Id" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="emp_id" placeholder="Employee Id" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Name</span>
       </div>
-      <input type="password" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="emp_name" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Department</span>
       </div>
-      <input type="password" class="form-control" placeholder="Department" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="dept" placeholder="Department" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Designation</span>
       </div>
-      <input type="password" class="form-control" placeholder="Designation" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="designation" placeholder="Designation" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Email Id</span>
       </div>
-      <input type="password" class="form-control" placeholder="Email Id" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="email" placeholder="Email Id" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-4">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Mobile No</span>
       </div>
-      <input type="password" class="form-control" placeholder="Mobile No" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" class="form-control" name="mobile" placeholder="Mobile No" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        </div>
        <div class="btn-sub">
-       <a href="#"><input type="button" class="btn-submit-val" value="Submit"></a>
+       <a href="http://<?=base_url("index.php/test/emp_add")?>"><input type="submit" class="btn-submit-val" value="Submit"></a>
        </div>
     </div>
+    </form>
  </section>   
 </body>
 </html>

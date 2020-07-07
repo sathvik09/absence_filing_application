@@ -20,11 +20,11 @@
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Old Password</span>
       </div>
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text" name="old_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="input-group mb-5">
       <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">New Password</span>
+      <span class="input-group-text" name="new_pass" id="basic-addon1">New Password</span>
       </div>
       <input type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
        </div>
@@ -32,7 +32,7 @@
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Confirm Password</span>
       </div>
-      <input type="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="password" name="confirm_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
        </div>
        <div class="btn-sub">
        <a href="#"><input type="button" class="btn-submit-val" value="Submit"></a>

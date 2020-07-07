@@ -32,6 +32,30 @@
 
       } 
 
+      public function emp_add()
+      {
+         
+         if(isset($_POST["emp_id"]))
+         {
+            echo "here"; 
+            $emp_id=$_POST["emp_id"];
+            $emp_name=$_POST["emp_name"];
+            $dept=$_POST["dept"];
+            $designation=$_POST["designation"];
+            $email=$_POST["email"];
+            $mobile=$_POST["mobile"];
+
+            $this->load->model('model');
+            $x =  $this->model->gettrans1($emp_id,$emp_name,$dept,$designation,$email,$mobile);
+             foreach($x as $res)
+             {
+                echo $res['Slno'];
+             }
+            $this->load->view('add_emp');
+         }
+          
+      
+      }
       public function form_val(){
        
    } 
