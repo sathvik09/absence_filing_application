@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    font-weight: 200;
+    font-size: 2.2vw;
+    background: linear-gradient(to right,#6b6c71,#95969b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.password{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;;
+}
+
+.pass-bar{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+}
+
+.btn-sub{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-submit-val{
+    background-color: aliceblue;
+    width: 200%;
+    height: 6vh;
+    font-weight: 100;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+}
+
+.btn-submit-val:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+
+@media screen and (max-width:1024px){
+    .title{
+        font-size: 30px;
+    }
+
+    .form{
+        width: 80%;
+    }
+} 

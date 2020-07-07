@@ -101,21 +101,21 @@
               </li>
               
               <li class="nav-item settings-nav-d">
-                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/sample") ?>">
+                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/change_pass")?>">
                   <span data-feather="bar-chart-2"></span>
                   Change Password
                 </a>
               </li>
               
               <li class="nav-item settings-nav-d">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/add_emp")?>">
                   <span data-feather="bar-chart-2"></span>
                   Add employee
                 </a>
               </li>
               
               <li class="nav-item settings-nav-d">
-                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/upload")?>">
+                <a class="nav-link" href="http://<?= base_url("index.php/mycontroller/abcd/excel")?>">
                   <span data-feather="bar-chart-2"></span>
                   Upload Excel Sheet
                 </a>
