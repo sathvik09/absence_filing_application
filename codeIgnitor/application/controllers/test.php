@@ -28,7 +28,7 @@
          }
          }
          else
-         $this->load->view('landing_page');
+         {$this->load->view('landing_page');}
 
       } 
 
