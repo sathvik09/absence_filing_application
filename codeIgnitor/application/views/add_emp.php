@@ -7,14 +7,14 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200,300&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="http://<?=base_url()?>ext_files/css/add_emp.css?version=21">
-</head>
+  </head>
 <body>
 
  <section class="password">
     <div class="pass-bar">
       <h2 class="title">Add Employees</h2>
     </div>
-    <form action="http://<?=base_url("index.php/test/emp_add")?>" method="post">
+    <form action="http://<?=base_url("index.php/test/emp_add/emp_added")?>" method="post">
     <div class="form">
      <div class="input-group mb-4">
       <div class="input-group-prepend">
@@ -54,7 +54,7 @@
        </div>
        </div>
        <div class="btn-sub">
-       <a href="http://<?=base_url("index.php/test/emp_add")?>"><input type="submit" class="btn-submit-val" value="Submit"></a>
+       <a href="http://<?=base_url()?>"><input type="submit" class="btn-submit-val" value="Submit"></a>
        </div>
     </div>
     </form>
