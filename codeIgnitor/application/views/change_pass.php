@@ -7,7 +7,7 @@
    <title>Leave Management|Change Password</title>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200,300&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="http://<?=base_url()?>ext_files/css/change_pass.css?version=21">
+   <link rel="stylesheet" href="http://<?=base_url()?>ext_files/css/change_pass.css?version=11">
 </head>
 <body>
 

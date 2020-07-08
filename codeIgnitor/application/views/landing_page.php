@@ -35,7 +35,7 @@
         <div class="space"></div>
         <form action="http://<?=base_url("index.php/test/index/form_val")?>" method = "post">
         <div class="input-field col user">
-          <input id="password" name = "username" type="text" class="validate"><?php if($this->uri->segment(3) == "form_val")echo form_error("username"); ?>
+          <input id="password" autocomplete="off" name = "username" type="text" class="validate"><?php if($this->uri->segment(3) == "form_val")echo form_error("username"); ?>
           <label for="password">Username</label>
           </div>
           <div class="space"></div>
