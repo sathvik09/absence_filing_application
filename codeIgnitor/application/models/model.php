@@ -28,6 +28,18 @@
         $this->db->insert('employee', $array1);
         
     }
+    public function pass_change()
+    {
+        $this->load->database();
+        $query=$this->db->query("Select password from attendance");
+        $pass=0;
+        foreach ($query->result_array() as $row)
+{
+        $pass = $row['password'];
+    
+}
+    return $pass;
+    }
  }
 
 ?>
