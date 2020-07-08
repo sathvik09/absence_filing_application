@@ -10,23 +10,14 @@
 </head>
 <body>
     <section class="import">
-     <div class="heading">
-         <h3>Upload File</h3>
-     </div>
-       <form action="#" class="file-input">
-         <div class="input-group mb-3">
-           <div class="input-group-prepend">
-         <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-        </div>
-         <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-           </div>
-        </div>
-       </form>
+    <div class="button-wrap">
+  <label class ="new-button" for="upload"> Upload CSV
+  <input id="upload" type="file" >
+<div>
        <table class="input-tbl">
            
        </table>
     </section>
+    <script src="http://<?= base_url("ext_files/js/excel.js")?>"></script>
 </body>
 </html>
