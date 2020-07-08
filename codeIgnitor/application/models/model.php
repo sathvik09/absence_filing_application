@@ -40,6 +40,12 @@
 }
     return $pass;
     }
+    public function update($ans)
+    {
+        
+        $this->load->database();
+$query1=$this->db->query("Update attendance set password='$ans' where name='sathvik'");
+    }
  }
 
 ?>

@@ -107,7 +107,14 @@
       {
          if($_POST['new_pass']==$_POST['confirm_pass'])
          {
-            echo "Password changed successfully";
+            
+            
+         $this->load->model('model');
+         $this->model->update($_POST['new_pass']);
+            //echo "Password changed successfully";
+            
+        $this->load->view('dashboard');
+        $this->load->view('change_pass');
          }
          else echo "Confirm password and new password did not match";
       }
