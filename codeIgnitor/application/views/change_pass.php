@@ -22,19 +22,19 @@
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Old Password</span>
       </div>
-      <input type="password" name="old_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php if(isset($_POST['old_pass'])){echo form_error("old_pass");} ?>
+      <input type="password" name="old_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php if(isset($_POST['old_pass'])){echo "\n";echo form_error("old_pass");} ?>
        </div>
        <div class="input-group mb-5">
       <div class="input-group-prepend">
       <span class="input-group-text"  id="basic-addon1">New Password</span>
       </div>
-      <input type="password" class="form-control" name="new_pass" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php echo form_error("new_pass"); ?>
+      <input type="password" class="form-control" name="new_pass" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php if(isset($_POST['new_pass'])){echo form_error("new_pass");} ?>
        </div>
        <div class="input-group mb-5">
       <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Confirm Password</span>
       </div>
-      <input type="password" name="confirm_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php echo form_error("confirm_pass"); ?>
+      <input type="password" name="confirm_pass" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"><?php if(isset($_POST['confirm_pass'])){echo form_error("confirm_pass");} ?>
        </div>
        <div class="btn-sub">
        <a href="#"><input type="submit" class="btn-submit-val" value="Submit"></a>
