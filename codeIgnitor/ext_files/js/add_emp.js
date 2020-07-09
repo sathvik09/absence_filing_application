@@ -1,7 +1,7 @@
 let submit = document.querySelector('.button-sub');
 let list = document.querySelectorAll('.data');
 let isTrue =true;
-console.log(document.querySelector(".dropdown-item").value);
+//console.log(document.querySelector(".dropdown-item").value);
 
 let dropdown = ()=>{
     fetch("http://localhost/absence_filing_application/codeIgnitor/index.php/test/get_list")
