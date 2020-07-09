@@ -124,6 +124,17 @@
          
         $this->load->view('dashboard');
          $this->load->view('change_pass');}
-} 
+}
+
+public function get_list(){
+   $json = file_get_contents("php://input");
+   $data = json_decode($json,true);
+   $this->load->model('Get_dropDown');
+   $data=$this->Get_dropDown->getInfo();
+   foreach($data as $res){
+     $arr[] = array("des"=>$res["Department"]);
+   }
+   echo json_encode($arr);
+}
 }
 ?>
